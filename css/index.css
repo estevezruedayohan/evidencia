@@ -1,0 +1,61 @@
+.logo-container{
+    border-radius: 10%;
+    width: 140px;
+}
+
+.titulo-aplicacion{
+    color: var(--black);
+    font-family: var(--fuente2);
+    font-size: var(--xxl);
+    margin: 0.5rem auto 1rem;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.user-login, .pass-login{
+    background: var(--white);
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto 1rem;
+    padding: 0.7rem;
+    width:  80%;
+}
+
+.btn-submit{
+    background: var(--dark);
+    border-radius: 8px;
+    color: var(--black);
+    font-size: var(--md);
+    margin: 1rem auto;
+    padding: 0.7rem;
+    width: 50%;  
+}
+
+.btn-submit:hover{
+    transform: scale(1.01);
+}
+
+@media screen and (min-width: 1024px) {
+    .user-login, .pass-login{
+        width:  50%;
+    }
+    .titulo-aplicacion{
+        font-size: var(--xxxl);
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .user-login, .pass-login{
+        width:  25%;
+    }
+    .btn-submit{
+        font-size: var(--lg);
+        width: 25%;  
+    }
+}

@@ -1,21 +1,18 @@
 
 body{
-    font-family: "Open sans", "sans-serif";
+    background: var(--light);
+    font-family: var(--fuente1);
+    font-size: var(--md);
 }
 
-.div1{
-    height: 30px;
-    background: var(--dark);
+.container{
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+    justify-content: center;
+    margin: 30px 0px 120px;
+    width: 100%;
 }
-.div2{
-    height: 30px;
-    background: var(--medium-dark);
-}
-.div3{
-    height: 30px;
-    background: var(--medium-light);
-}
-.div4{
-    height: 30px;
-    background: var(--light);
-}
+
