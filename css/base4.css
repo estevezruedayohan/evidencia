@@ -1,0 +1,13 @@
+:root{
+    --fuente1: "Open sans", "sans-serif";
+    --xl: 24px;
+    --lg: 20px;
+    --md: 16px;
+    --sm: 12px;
+    --black: #000000;
+    --white: #ffffff;
+    --dark: #053742;
+    --medium-dark: #39A2DB;
+    --medium-light: #A2DBFA;
+    --light: #E8F0F2;
+}

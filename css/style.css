@@ -1,0 +1,21 @@
+
+body{
+    font-family: "Open sans", "sans-serif";
+}
+
+.div1{
+    height: 30px;
+    background: var(--dark);
+}
+.div2{
+    height: 30px;
+    background: var(--medium-dark);
+}
+.div3{
+    height: 30px;
+    background: var(--medium-light);
+}
+.div4{
+    height: 30px;
+    background: var(--light);
+}
