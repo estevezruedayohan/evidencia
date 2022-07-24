@@ -1,0 +1,44 @@
+.titulo__busqueda{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.label__funcionario{
+    margin-bottom: 0.5rem;
+}
+
+.buscar__funcionario{
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+.tabla__result__funcionario{
+    width: 90%;
+}
+
+.tabla__result__funcionario th, tr, td{
+    border: 1px #000000 solid;
+    padding: 0.5rem;
+}
+
+.tabla__result__funcionario th{
+    font-weight: bold;
+}
+
+.tabla__result__funcionario td{
+    padding: 0.5rem;
+}
+
+.td__icono{
+    text-align: center;
+}
+
+.fa-file-pen{
+    color: green
+}
+
+.fa-trash-can{
+    color: red
+}

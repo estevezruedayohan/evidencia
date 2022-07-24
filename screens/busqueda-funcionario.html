@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="../assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/normalize.css">
+    <link rel="stylesheet" href="../css/base/base.css">
+    <link rel="stylesheet" href="../css/themes/theme1.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/busqueda.css">
+    <script src="https://kit.fontawesome.com/a4c716146a.js" crossorigin="anonymous"></script>
+    <title>Evidencia V1.0</title>
+</head>
+<body>
+    <nav class="menu">
+        <img src="../assets/logo1.png" alt="logo-aplicacion" class="logo__menu">
+        <div class="block__menu">
+            <ul class="menu__left">
+                <li class="menu__left__home">
+                    <a href="busqueda-funcionario.html">Inicio</a>
+                </li>
+            </ul>
+            <ul class="menu__right">
+                <li class="menu__right__usuario">Yohan Manuel Estevez Rueda</li>
+                <li class="menu__right__salir">
+                    <a href="../index.html">Salir</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <h2 class="titulo__busqueda">Búsqueda de Funcionarios</h2>
+        <label for="input-funcionario" class="label__funcionario">Funcionarios</label>
+        <input name="input-funcionario" type="text" class="buscar__funcionario" placeholder="Ingrese apellido">
+
+        <table class="tabla__result__funcionario">
+            <thead>
+                <tr>
+                    <th colspan="4">Coincidencias</th>
+                </tr>
+            </thead>
+            <tbody data-result>
+                <tr class="result__funcionario">
+                    <td>Yohan Manuel Estevez Rueda</td>
+                    <td class="td__icono">
+                        <a href="#" class="link__agregar__comentario">
+                            <span class="span-icono"><i class="fa-solid fa-file-pen fa-sm"></i></span>
+                        </a>
+                    </td>
+                    <td class="td__icono">
+                        <a href="#" class="link__generar__resumen">
+                            <span class="span-icono"><i class="fa-regular fa-trash-can fa-sm"></i></span>
+                        </a>
+                    </td>
+                    <td class="td__icono">
+                        <a href="#" class="link__generar__resumen">
+                            <span class="span-icono">
+                                <i class="fa-solid fa-file-export"></i>
+                            </span>
+                        </a>
+                    </td>
+
+                </tr>
+                
+            </tbody>
+        </table>
+
+    </main>
+</body>
+</html>
