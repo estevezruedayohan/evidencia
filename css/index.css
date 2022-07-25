@@ -33,19 +33,7 @@
     width:  80%;
 }
 
-.btn-submit{
-    background: var(--dark);
-    border-radius: 8px;
-    color: var(--black);
-    font-size: var(--md);
-    margin: 1rem auto;
-    padding: 0.7rem;
-    width: 50%;  
-}
 
-.btn-submit:hover{
-    transform: scale(1.01);
-}
 
 @media screen and (min-width: 1024px) {
     .container{
@@ -69,8 +57,5 @@
     .user-login, .pass-login{
         width:  25%;
     }
-    .btn-submit{
-        font-size: var(--lg);
-        width: 25%;  
-    }
+    
 }

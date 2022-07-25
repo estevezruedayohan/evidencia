@@ -15,6 +15,20 @@ body{
     width: 100%;
 }
 
+.btn-submit{
+    background: var(--dark);
+    border-radius: 8px;
+    color: var(--black);
+    font-size: var(--md);
+    margin: 1rem auto;
+    padding: 0.7rem;
+    width: 50%;  
+}
+
+.btn-submit:hover{
+    transform: scale(1.01);
+}
+
 @media screen and (min-width: 1024px) {
     .container{
         height: calc(100vh - 13rem);
@@ -25,5 +39,9 @@ body{
 @media screen and (min-width: 1280px) {
     .container{
         height: calc(100vh - 12.5rem);
+    }
+    .btn-submit{
+        font-size: var(--lg);
+        width: 25%;  
     }
 }
