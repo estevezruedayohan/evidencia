@@ -9,6 +9,7 @@
 
 .buscar__funcionario{
     border-radius: 4px;
+    font-size: var(--sm);
     margin-bottom: 1rem;
     padding: 0.5rem;
     width: 80%;
@@ -16,6 +17,7 @@
 
 .tabla__result__funcionario{
     width: 90%;
+    font-size: var(--sm);
 }
 
 .tabla__result__funcionario th, tr, td{
@@ -27,12 +29,9 @@
     font-weight: bold;
 }
 
-.tabla__result__funcionario td{
-    padding: 0.5rem;
-}
-
 .td__icono{
     text-align: center;
+    font-size: var(--sm);
 }
 
 .fa-file-pen{
@@ -41,4 +40,33 @@
 
 .fa-trash-can{
     color: red
+}
+
+@media screen and (min-width: 1024px) {
+    .buscar__funcionario{
+        width: calc(60% - 1rem);
+        font-size: var(--md);
+    }
+    
+    .tabla__result__funcionario{
+        width: 60%;
+        font-size: var(--md);
+
+    }
+    .td__icono{
+        font-size: var(--md);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .buscar__funcionario{
+        width: calc(35% - 1rem);
+    }
+
+    .tabla__result__funcionario{
+        width: 50%;
+    }
+    .td__icono{
+        font-size: var(--lg);
+    }
 }
