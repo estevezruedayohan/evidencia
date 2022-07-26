@@ -10,7 +10,7 @@ body{
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 12.15rem);
+    min-height: calc(100vh - 14rem);
     margin: 30px 0px;
     width: 100%;
 }
