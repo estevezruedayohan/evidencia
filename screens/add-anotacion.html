@@ -40,12 +40,29 @@
 
     <main class="container">
         <h2 class="anotacion__titulo">Datos del Funcionario</h2>
-        <div class="funcionario__datos">
-            <label for="nomb-func" class="nombre__label">Apellidos y Nombres</label>
-            <input type="text" disabled name="nomb-func" id="" class="funcionario__data" placeholder="temporal">
-            <label for="comp-func" class="compania__label">Compañía</label>
-            <input type="text" disabled name="comp-func" id="" class="funcionario__data" placeholder="temporal">
-        </div>
+        <section class="funcionario__datos">
+            <div class="funcionario__nombre">
+                <label for="nomb-func" class="nombre__label">Nombre</label>
+                <input type="text" disabled name="" id="" class="funcionario__data textbox1" placeholder="Nombres y apellidos del funcionario">
+            </div>
+            <div class="funcionario__idCompania">
+                <div class="funcionario__id">
+                    <label for="id-func" class="id__label" >Cédula</label>
+                    <input type="number" disabled name="id-func" id="" class="funcionario__data textbox2" placeholder="1098756895">
+                </div>
+                <div class="funcionario__compania">
+                    <label for="comp-func" class="compania__label">Compañía</label>
+                    <input type="text" disabled name="comp-func" id="" class="funcionario__data textbox2" placeholder="Santander">
+                </div>
+                <div class="bloque__accion">
+                    <a href="resumen.html" class="link__generar__resumen">
+                        <span class="span-icono" style="color:blue">
+                            <i class="fa-solid fa-file-export"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
         <form action="#" class="anotacion__datos">
             <label for="" class="anotacion__label">Anotación</label>
             <textarea name="" id="" cols="30" rows="8" class="anotacion__nota"></textarea>

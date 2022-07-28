@@ -1,10 +1,120 @@
 .menu{
     position: fixed;
-    z-index: 1;
     top: 0;
+    z-index: 1;
 }
 
 .container{
-    padding-top: 3.5rem;
     min-height: calc(100vh - 11.1rem);
+    padding-top: 3.5rem;
+}
+
+
+.filtro__anotaciones{
+    font-size: var(--sm);
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.inicio__filtro, 
+.fin__filtro{
+    margin-right: 0.3rem;
+}
+
+.btn__filtrar{
+    width: 5em;
+}
+
+.linea__resultAnotacion{
+    background: var(--medium-light);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--sm);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.resultAnotacion__label{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.resultAnotacion__fechaHora{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.resultAnotacion__nota{
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+.bloque__accion{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--lg);
+    margin: 0.5rem 0rem;
+}
+
+.addAnotacion__label{
+    font-size: var(--sm);
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .container{
+        margin-bottom: 5rem;
+    }
+    .filtro__anotaciones{
+        font-size: var(--sm);
+        padding: 0.3rem;
+        width: 70%;
+    }
+    .resultado__anotaciones{
+        width: 75%;
+    }
+
+    .resultAnotacion__fechaHora{
+        justify-content:flex-start;
+        align-items: center;
+    }
+
+    .resultAnotacion__label{
+        margin-bottom: 0;
+    }
+
+    .resultAnotacion__fecha, 
+    .resultAnotacion__hora{
+        margin-left: 1rem;
+    }
+
+    .footer{
+        position: fixed;
+        bottom: 0;
+        z-index: 2000;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container{
+        height: initial;
+        margin-bottom: 5rem;
+    }
+
+    .filtro__anotaciones{
+        font-size: var(--sd);
+        width: 60%;
+    }
+
+    .linea__resultAnotacion{
+        font-size: var(--sd);
+        line-height: 1.1rem;
+    }
+    .resultado__anotaciones{
+        width: 65%;
+    }
 }

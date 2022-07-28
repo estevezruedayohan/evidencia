@@ -72,7 +72,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .menu__right__usuario{
-        font-size: var(--lg);
-    }
+    /* .menu__right__usuario{
+        font-size: var(--md);
+    } */
 }

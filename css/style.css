@@ -31,14 +31,16 @@ body{
 
 @media screen and (min-width: 1024px) {
     .container{
-        min-height: calc(100vh - 13rem);
+        /* min-height: calc(100vh - 13rem); */
+        margin-bottom: 5rem;
+
     }
 }
 
 
 @media screen and (min-width: 1280px) {
     .container{
-        height: calc(100vh - 12.5rem);
+        margin-bottom: 5rem;
     }
     .btn-submit{
         font-size: var(--lg);

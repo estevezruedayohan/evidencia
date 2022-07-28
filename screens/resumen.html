@@ -41,21 +41,67 @@
 <main class="container">
     <h2 class="anotacion__titulo">Resúmen de Anotaciones</h2>
     <section class="funcionario__datos">
-        <label for="nomb-func" class="nombre__label">Apellidos y Nombres</label>
-        <input type="text" disabled name="nomb-func" id="" class="funcionario__data" placeholder="temporal">
-        <label for="comp-func" class="compania__label">Compañía</label>
-        <input type="text" disabled name="comp-func" id="" class="funcionario__data" placeholder="temporal">
-    </section>
-    <section class="linea__anotacion">
-        <div class="bloque__anotacion">
-            
+        <div class="funcionario__nombre">
+            <label for="nomb-func" class="nombre__label">Nombre</label>
+            <input type="text" disabled name="" id="" class="funcionario__data textbox1" placeholder="Nombres y apellidos del funcionario">
         </div>
+        <div class="funcionario__idCompania">
+            <div class="funcionario__id">
+                <label for="id-func" class="id__label" >Cédula</label>
+                <input type="number" disabled name="id-func" id="" class="funcionario__data" placeholder="1098756895">
+            </div>
+            <div class="funcionario__compania">
+                <label for="comp-func" class="compania__label">Compañía</label>
+                <input type="text" disabled name="comp-func" id="" class="funcionario__data" placeholder="Santander">
+            </div>
+        </div>
+    </section>
+
+    <section class="filtro__anotaciones">
+        <div class="filtro__inicio">
+            <label for="" class="inicio__label">Desde</label>
+            <input type="date" name="" id="" class="inicio__filtro">
+        </div>
+        <div class="filtro__fin">
+            <label for="" class="fin__label">Hasta</label>
+            <input type="date" name="" id="" class="fin__filtro">
+        </div>
+        <input type="button"  value="Filtrar" class="btn__filtrar">
         <div class="bloque__accion">
-            <a href="#" class="link__generar__resumen">
-                <span class="span-icono" style="color: red"><i class="fa-regular fa-trash-can"></i></span>
+            <!-- <label for="" class="addAnotacion__label">Agregar anotación</label>  -->
+            <a title="Agregar anotación" href="add-anotacion.html" class="link__agregar__anotacion">
+                <span class="span-icono" style="color:#008000">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
             </a>
         </div>
     </section>
+
+    <section class="resultado__anotaciones">
+        <article class="linea__resultAnotacion">
+            <div class="resultAnotacion__fechaHora">
+                <h3 class="resultAnotacion__label">Fecha y hora:</h3>
+                <div class="resultAnotacion__fecha">25/06/2022</div>
+                <div class="resultAnotacion__hora">12:00:00</div>
+            </div>
+            <h3 class="resultAnotacion__label">Anotación</h3>
+            <p class="resultAnotacion__nota">El funcionario se encontraba en total descuido en su puesto de servicio garita 6 durante la revista realizada por la guayana vehicular realizada por el Insp. Vargas en compañía del auxiliar Bachiller Jerez Tamy, fue necesario utilizar luces y piedras sin obtener respuesta por lo que se llamó al cuarto de control para que le advirtiera por medio del citófono.</p>
+            <h3 class="resultAnotacion__label">Soporte</h3>
+            <p class="resultAnotacion__nota">Se elaboró informe 2022IE254785 del 27/7/2022 suscrito por el Insp. Vargas Cardenas Omar, se deja anotación en el folio 256 de la minuta de servicio de Oficial de servicio del 26/7/2022</p>
+            <div class="bloque__accion">
+                <a href="#" class="link__borrar__anotacion">
+                    <span class="span-icono" style="color: #008000"><i class="fa-solid fa-pen-to-square"></i></span>
+                </a>
+                <a href="#" class="link__borrar__anotacion">
+                    <span class="span-icono" style="color: #ff0000"><i class="fa-regular fa-trash-can"></i></span>
+                </a>
+            </div>
+        </article>
+
+        
+    </section>
+
+
 
     
     

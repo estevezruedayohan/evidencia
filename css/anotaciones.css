@@ -7,14 +7,53 @@
 .funcionario__datos{
     display: flex;
     flex-direction: column;
+    font-size: var(--sm);
     margin-bottom: 1rem;
     width: 90%;
+}
+
+.funcionario__nombre{
+    align-items: center;
+    display: flex;
+    margin-bottom: 0.3rem;
+}
+
+.funcionario__nombre label,
+.funcionario__idCompania label{
+    padding: 0.27rem;
+}
+
+.textbox1{
+    flex-grow: 3;
+}
+
+.textbox2{
+    width: 5rem;
+}
+
+.funcionario__idCompania{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.funcionario__id, .funcionario__compania{
+    align-items: center;
+    display: flex;
 }
 
 .funcionario__data{
     border: none;
     border-radius: 4px;
     padding: 0.27rem;
+}
+
+.bloque__accion{
+    font-size: var(--lg);
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
 }
 
 .anotacion__datos{
@@ -64,12 +103,17 @@
 }
 
 @media screen and (min-width: 768px) {
+    
+    .bloque__accion{
+        width: 15rem;
+        align-items: center;
+    }
+
     .anotacion__titulo{
         font-size: var(--md);
     }
     
     .anotacion__datos{
-        font-size: var(--sm);
         gap: 0.75rem;
         letter-spacing: 0.15rem;
         padding: 1rem;
@@ -88,17 +132,26 @@
     .funcionario__datos{
         background: var(--medium-light);
         border-radius: 8px;
-        width: 70%;
-        flex-wrap: wrap;
+        font-size: var(--md);
         padding: 0.75rem;
+        width: 70%;
+    }
+
+    .textbox2{
+        width: 8rem;
+    }
+    .funcionario__nombre{
+        margin-bottom: 0.5rem;
     }
 
     .funcionario__data{
         padding: 0.45rem;
     }
 
-    .nombre__label, .compania__label{
-        padding-bottom: 0.45rem;
+    .bloque__accion{
+        font-size: var(--xl);
+        width: 15rem;
+        margin-left: auto;
     }
 
     .anotacion__datos input, textarea{
